@@ -22,6 +22,7 @@ public class GlazedAddon extends MeteorAddon {
 
     @Override
     public void onInitialize() {
+        Modules.get().add(new GamblingDropper());
         Modules.get().add(new SpawnerProtect());
         Modules.get().add(new AntiTrap());
         Modules.get().add(new CoordSnapper());
